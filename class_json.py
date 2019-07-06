@@ -41,6 +41,15 @@ class Json:
         res = self.__dict__.get(k, default)
         return res
 
+    def keys(self):
+        return self.__dict__.keys()
+
+    def update(self, e, **k):
+        if e is not None:
+            return self.__dict__.update(e)
+        else:
+            return self.__dict__.update(**k)
+
     def items(self):
         return self.__dict__.items()
 
