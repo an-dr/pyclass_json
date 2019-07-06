@@ -1,1 +1,1 @@
-from . import class_json
+from .class_json import Json
