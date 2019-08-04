@@ -34,6 +34,9 @@ class Json:
     def to_str(self):
         return json.dumps(self.__dict__, separators=(',', ':'))  # to str
 
+    def print(self):
+        print(self.to_str_formated())
+
     def to_dict(self):
         return self.__dict__
 
